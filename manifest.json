@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "WikiKeyword",
+  "version": "1.0.0",
+  "description": "View Wikipedia pageview statistics for any selected word or phrase",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://wikimedia.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["popup.css"]
+    }
+  ]
+}
